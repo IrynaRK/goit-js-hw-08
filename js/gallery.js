@@ -65,8 +65,6 @@ const images = [
 ];
 const galleryContainer = document.querySelector(".gallery-container");
 
-//const galleryMurkup = galleryCreateMurkup(galleryItems);
-
 class Gallery {
   constructor(galleryContainer, galleryItems) {
     this.galleryContainer = galleryContainer;
@@ -92,8 +90,6 @@ class Gallery {
     this.galleryContainer.innerHTML = galleryHTML;
   }
 }
-
-//galleryContainer.insertAdjacentHTML("beforeend", galleryMurkup);
 
 const myGallery = new Gallery(galleryContainer, images);
 myGallery.renderGallery();
